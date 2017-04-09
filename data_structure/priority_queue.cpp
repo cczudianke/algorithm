@@ -83,13 +83,12 @@ int main(void)
 	struct heap S;
 	srand((int)time(NULL));
 	BUILD_MAX_HEAP(&S);
-	for(int i=0;i<1000;i++){
+	for(int i=0;i<1000000;i++){
 		INSERT(&S,rand());
 		
 	}
-	for(int i=0;i<1000;i++)
+	for(int i=0;i<1000000;i++)
 		printf("%d ",S.a[i]);
 	printf("\n");
 	printf("%d",MAXIMUM(&S));
-	return 0;
-} 
+}
